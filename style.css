@@ -1,0 +1,29 @@
+.vert {
+    color: #00E395;
+}
+
+.bleu {
+    color: #008FFB !important;
+}
+
+.rouge {
+    color: #FF4560 !important;
+}
+
+.orange {
+ color: #FDB73B !important;
+}
+
+.backvert {
+    background-color: #00E395 !important;
+}
+
+.backbleu {
+    background-color: #008FFB !important;
+}
+
+.backcolored {
+    background-color: #FF4560 !important;
+}
+
+

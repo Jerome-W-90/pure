@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<title>Pure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css"/>
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("22.jpg");
+    min-height: 100%;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="logo.png"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button"> A PROPOS</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> L'EQUIPE</a>
+        <!-- <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a> -->
+        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-eur"></i> TARIFS</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <!-- <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a> -->
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Go Green Go Pure</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Go Green Go Pure</span><br>
+      <span class="w3-large">Ne gaspillez pas votre energie, transformez la !</span>
+      <p><a href="#about"
+          class="w3-button backvert w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Decouvrir notre concept</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+
+
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-padding-64">
+        <h2>Pourquoi nous choisir ?</h2>
+        <div class="w3-third rouge">
+          <span class="w3-xxlarge">30 %</span>
+          <br><b>Reduction Conso</b>
+        </div>
+        <div class="w3-third bleu">
+          <span class="w3-xxlarge">420 €/mois</span>
+          <br><b>Economie</b>
+        </div>
+        <div class="w3-third orange">
+          <span class="w3-xxlarge">20</span>
+          <br><b>Machines par salle</b>
+        </div>
+    
+    
+    
+      </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">NOTRE CONCEPT</h3>
+    <p class="w3-center w3-large">Les caractéristiques clefs de notre Start Up</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+        <div class="w3-quarter">
+            <i class="material-icons w3-xxxlarge rouge">
+              euro_symbol
+            </i>
+            <p class="w3-large rouge">Economie</p>
+            <p>Réalisez d’importantes économies sur vos prochaines factures d’électricité en utilisant les capteurs PURE</p>
+          </div>
+
+      <div class="w3-quarter">
+        <i class="material-icons w3-xxxlarge bleu">
+          share
+        </i>
+        <p class="w3-large bleu">Collaboratif</p>
+        <p>Fédérez vos adherents autour d’un objectif commun grâce à un système de scores et de récompenses</p>
+      </div>
+
+      <div class="w3-quarter">
+        <i class="material-icons w3-xxxlarge vert">
+          eco
+        </i>
+        <p class="w3-large vert">Ecologie</p>
+        <p>Tournez vous vers une énergie plus propre grâce à notre produit et faites du sport un engagement</p>
+      </div>
+
+      <div class="w3-quarter">
+        <i class="material-icons w3-xxxlarge orange">
+          settings_input_component
+        </i>
+        <p class="w3-large orange">Plug and Play</p>
+        <p>Pratique et rapide à mettre en place, notre capteur s'adaptera à n'importe lequel de vos équipement</p>
+      </div>
+    
+    </div>
+    <img src="product.jpg" style="width:100%">
+
+  </div>
+
+  <!-- Promo Section - "We know design" -->
+  <!-- <div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div> -->
+
+ 
+
+
+
+  <!-- Work Section -->
+  <!-- <div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div> -->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Descriptif Produit</h3>
+        <p>Un générateur d'électricité miniature qui s'attache à la roue d'un vélo
+           ou d'un tapis de salle. Le générateur miniature est raccordé à un alternateur 
+           branché sur le secteur. Lorsqu'il est chargé, vous devenez autonome.
+           </p>
+        <p>Jusqu'à 30% d'économie réalisée sur votre facture d'électricité !</p>
+      </div>
+      <div class="w3-col m6">
+          <img src="produit.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>NOS TARIFS</h3>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>Capteur</b></li>
+        <li class="w3-padding-16"><b>   </b></li>
+            <li class="w3-padding-16"><b>199€ par mois</b></li>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Adherer</button>
+        </li>
+      </ul>
+      </div>
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="backvert w3-xlarge w3-padding-48">Standard</li>
+          <li class="w3-padding-16"><b>Capteur</b></li>
+          <li class="w3-padding-16"><b>+ Kit marketing</b></li>
+          <li class="w3-padding-16"><b>199€ par mois</b></li>
+          <li class="w3-padding-16"><b>+ 200€</b> (pour le kit marketing)</li>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button backvert w3-padding-large">Adherer</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16"><b>Capteur</b></li>
+          <li class="w3-padding-16"><b>+ Kit marketing avancé</b></li>
+          <li class="w3-padding-16"><b>299€ par mois</b></li>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Adherer</button>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Nous sommes à votre disposition</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Sophia Antipolis, Skema Business School, 06</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +33 646466548</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Sujet" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> Envoyer
+          </button>
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+
+
+   <!-- Team Section -->
+   <div class="w3-container" style="padding:128px 16px" id="team">
+      <h3 class="w3-center">L'EQUIPE</h3>
+      <p class="w3-center w3-large">Les acteurs à l'origine de PURE</p>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l2  w3-margin-bottom">
+          <div class="w3-card">
+            <img src="roxane.png" style="width:100%">
+            <div class="w3-container">
+              <h3>Roxane</h3>
+              <p class="w3-opacity">CEO & Fondatrice</p>
+              <p>20 ans, Etudiante a Skema Business School, en L3 PGE</p> <br /><br /><br />
+  
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="jerome.png"  style="width:100%">
+            <div class="w3-container">
+              <h3>Jerome</h3>
+              <p class="w3-opacity">Developpeur</p>
+              <p>Developpeur Web, en Formation intensive chez le Bocal Academy</p> <br /><br />
+  
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="yvon.png"  style="width:100%">
+            <div class="w3-container">
+              <h3>Dr. Yvon</h3>
+              <p class="w3-opacity">Web Designer</p>
+              <p>26 ans, Etudiant en Ingénierie de la Santé, Université Nice Sophia Antipolis</p> <br /><br />
+  
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="stephane.png" style="width:100%">
+            <div class="w3-container">
+              <h3>Stephane</h3>
+              <p class="w3-opacity">Business</p>
+              <p>Responsable Developpement Simplon PACA Est, Formations Gratuites aux métiers du Numérique</p> 
+  
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="damien.png" style="width:100%">
+            <div class="w3-container">
+              <h3>Damien</h3>
+              <p class="w3-opacity">Developpeur</p>
+              <p>Developpeur Web, en Formation intensive chez le Bocal Academy, Entrepreneur Chauffeur Privé</p>
+  
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="alice.png" style="width:100%">
+            <div class="w3-container">
+              <h3>Alice</h3>
+              <p class="w3-opacity">Management</p>
+              <p>Entrepreneuse, Ancienne de Skema, Fondatrice de la Brouette de Colette</p> <br /><br />
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Remonter</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
