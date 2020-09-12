@@ -5,7 +5,7 @@
 
 
 # Equipe
-- CEO & fondatrice : Roxane (https://www.linkedin.com/in/roxane-cadis-guillon-471839159/detail/recent-activity/)
+- CEO & fondatrice : Roxane (https://www.linkedin.com/in/roxane-cadis-guillon-471839159/)
 - Management : Alice (https://www.linkedin.com/in/alice-andré/)
 - Développeur : Damien (https://www.linkedin.com/in/damien-onolfo-747471192/)
 - Développeur : Jérôme (https://www.linkedin.com/in/jérômew/)
