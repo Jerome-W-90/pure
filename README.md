@@ -2,6 +2,7 @@
 - Utilisation de l'énergie créée dans les salles de sport
 - Projet gagnant lors du [Hackathon Greentech 2019](https://www.hackathon-greentech.fr) avec le prix du jury + le prix spécial Brandsilver
 - Vidéo sur les différents speechs : https://www.youtube.com/watch?v=8cezUy7qE7M
+- Template gratuit de [Themeforest](https://themeforest.net)
 
 
 # Equipe
